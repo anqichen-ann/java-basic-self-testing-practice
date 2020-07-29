@@ -71,12 +71,7 @@ class GenericTest {
   //  A wildcard is not a type variable, so we can’t write code that uses ? as a type.
   // <--start
   private static void swap(Pair<?> pair) {
-    Pair<?> res = new Pair<>(pair.getSecond(),pair.getFirst());
-    Object pleft = pair.getFirst();
-    Object pright = pair.getSecond();
-
-    pair.setFirst(pleft);
-    pair = res;
+    pair.swap();
   }
 
   // TODO: You can add additional method within the range if you like

@@ -10,6 +10,11 @@ public class Pair<T> {
         setFirst(first);
         setSecond(second);
     }
+    public void swap(){
+        T newKey = this.first;
+        this.first = this.second;
+        this.second = newKey;
+    }
 
     public T getFirst() {
         return first;
